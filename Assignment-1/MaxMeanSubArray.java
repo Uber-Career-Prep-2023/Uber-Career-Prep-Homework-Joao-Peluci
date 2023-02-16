@@ -4,7 +4,7 @@ import java.util.*;
 //Time for conclusion of function: 31 minutes
 public class q1 {
     //  Given an array of integers and an integer, k, find the maximum mean of a subarray of size k.
-    public static void maxSubArray(int[] input, int k) {
+    public static void MaxMeanSubArray(int[] input, int k) {
         //To solve this exercise, we may use a sliding window with a fixed size k.
         ArrayList<Integer> tempSumArr = new ArrayList<Integer>();
         int tempSum=0;
@@ -28,6 +28,6 @@ public class q1 {
     public static void main(String[] args) {
         int[] input1 = {1, 1, 1, 1, -1, -1, 2, -1, -1, 6};
         int k1=3;
-        maxSubArray(input1,k1);
+        MaxMeanSubArray(input1,k1);
     }
 }
