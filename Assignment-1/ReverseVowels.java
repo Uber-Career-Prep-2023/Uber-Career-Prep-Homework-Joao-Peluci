@@ -1,4 +1,3 @@
-//40 minutes to solve, not working properly
 //Time complexity: O(n)
 //Space complexity: O(n)
 public class ReverseVowels {
@@ -38,3 +37,4 @@ public class ReverseVowels {
         ReverseVowelsFunct("Uber Career Prep");   
     }
 }
+//40 minutes to solve, not working properly

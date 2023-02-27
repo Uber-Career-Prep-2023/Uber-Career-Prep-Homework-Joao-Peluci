@@ -1,4 +1,3 @@
-//36 min
 //Solved using two pointer iteration
 //Time Complexity: O(n);
 //Space Complexity: O(n*m), input size=n*m
@@ -45,3 +44,4 @@ public class BackspaceStringCompare {
        
     }
 }
+//36 min to solve

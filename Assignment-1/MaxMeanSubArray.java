@@ -1,7 +1,6 @@
 import java.util.*;
 //Time complexity of nested for: O(n^2)
 //Space complexity of algorithm: O(n)
-//Time for conclusion of function: 31 minutes
 public class MaxMeanSubArray {
     //  Given an array of integers and an integer, k, find the maximum mean of a subarray of size k.
     public static void MaxMeanSubArrayFunct(int[] input, int k) {
@@ -31,3 +30,4 @@ public class MaxMeanSubArray {
         MaxMeanSubArrayFunct(input1,k1);
     }
 }
+//Time for conclusion of function: 31 minutes

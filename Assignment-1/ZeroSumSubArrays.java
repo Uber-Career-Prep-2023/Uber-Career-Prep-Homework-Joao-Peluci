@@ -1,4 +1,3 @@
-//37 minutes to solve
 //Time complexity: O(n^2)
 //Space Complexity: O(n), input size = n
 //Used Variable-size growing sliding window
@@ -39,3 +38,4 @@ public class ZeroSumSubArrays {
         System.out.println(result);
     }
 }
+//37 minutes to solve
