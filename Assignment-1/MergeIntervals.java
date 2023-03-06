@@ -34,7 +34,14 @@ public class MergeIntervals {
 
             }
         }
-
+        ArrayList<int[]> result = new ArrayList<>();
+        for (int i = 0; i < arr.size(); i++) {
+            int[] aux = new int[2];
+            if (i==0){
+                aux[0]=map.get(i);
+            }
+            else if()
+        }
         System.out.println(map);
     }
     public static void main(String[] args) {

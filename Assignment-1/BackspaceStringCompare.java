@@ -1,11 +1,8 @@
-//Solved using two pointer iteration
 //Time Complexity: O(n);
 //Space Complexity: O(n*m), input size=n*m
-
+//Technique: Two pointer iteration
 public class BackspaceStringCompare {
     //Given two strings representing series of keystrokes, determine whether the resulting text is the same. Backspaces are represented by the '#' character so "x#" results in the empty string ("").
-
-
     public static boolean backspaceStringCompareFunc(String input, String compareInput) {
         StringBuilder inputSB = new StringBuilder(input);
         StringBuilder compareInputSB = new StringBuilder(compareInput);
@@ -32,10 +29,6 @@ public class BackspaceStringCompare {
             }
         }
         return false;
-        
-
-
-        
     }
     public static void main(String[] args) {
         String input = "Uber Career Prep";

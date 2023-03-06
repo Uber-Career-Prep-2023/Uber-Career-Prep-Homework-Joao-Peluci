@@ -26,16 +26,12 @@ public class ShortestSubstring {
             i++;
         }
 
-
-
-
     }
     public static void main(String[] args) {
         //The smaller string we can find has a minimum size of the string given
         String input = "abracadabra";
         String subString = "abc";
         shortestSubstringFunc(input, subString);
-
-
     }
 }
+//Not concluded.

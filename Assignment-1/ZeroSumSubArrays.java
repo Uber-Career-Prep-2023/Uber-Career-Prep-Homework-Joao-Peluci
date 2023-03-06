@@ -1,13 +1,6 @@
 //Time complexity: O(n^2)
 //Space Complexity: O(n), input size = n
-//Used Variable-size growing sliding window
-
-
-//Working, but I didn't understood why the output in this case is zero if there is two subarrays
-        //Input Array: [8, -5, 0, -2, 3, -4]
-        //Output: 0
-        //(Subarrays: [0], [8, -5, 0, -2, 3, -4])
-
+//Technique: Variable-size growing sliding window
 public class ZeroSumSubArrays {
     // Given an array of integers, count the number of subarrays that sum to zero.
     public static int zeroSumSubArrays(int[] arr) {

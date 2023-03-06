@@ -1,5 +1,6 @@
 //Time complexity: O(n)
 //Space complexity: O(n)
+//Technique: forward backward two pointer
 public class ReverseVowels {
     // Given a string, reverse the order of the vowels in the string.
     public static void ReverseVowelsFunct (String s) {

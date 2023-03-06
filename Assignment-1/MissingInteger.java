@@ -1,21 +1,9 @@
 //Time complexity worst case: O(n)
 //Space complexity of algorithm: O(1)
+//Technique: Single pointer search
 public class MissingInteger {
     // Given an integer n and a sorted array of integers of size n-1 which contains
     // all but one of the integers in the range 1-n, find the missing integer.
-    /*
-     * Input Array: [1, 2, 3, 4, 6, 7]
-     * Input n: 7
-     * Output: 5
-     * 
-     * Input Array: [1]
-     * Input n: 2
-     * Output: 2
-     * 
-     * Input Array: [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12]
-     * Input n: 12
-     * Output: 9
-     */
     public static int isMissing(int n, int[] arr){
         for (int i = arr.length-1; i > 0 ; i--) {
             if (arr[i]==n){

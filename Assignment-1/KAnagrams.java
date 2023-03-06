@@ -2,33 +2,11 @@ import java.util.HashMap;
 import java.util.Map;
 //Time complexity: O(n)
 //Space complexity of algorithm: O(n)
+//Technique: 
 public class KAnagrams {
     // Two strings are considered to be “k-anagrams” if they can be made into
     // anagrams by changing at most k characters in one of the strings. Given two
     // strings and an integer k, determine if they are k-anagrams.
-    /*
-     * Input Strings: "apple", "peach"
-     * Input k: 1
-     * Output: False
-     * 
-     * Input Strings: "apple", "peach"
-     * Input k: 2
-     * Output: True
-     * 
-     * Input Strings: "cat", "dog"
-     * Input k: 3
-     * Output: True
-     * 
-     * Input Strings: "debit curd", "bad credit"
-     * Input k: 1
-     * Output: True
-     * 
-     * Input Strings: "baseball", "basketball"
-     * Input k: 2
-     * Output: False
-     * 
-     * 
-     */
     public static boolean hasKAnagrams(String s, String t, int k) {
         Map<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
