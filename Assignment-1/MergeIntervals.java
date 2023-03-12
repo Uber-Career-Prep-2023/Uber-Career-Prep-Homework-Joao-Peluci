@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-//Time complexity: O(n)
+//Time complexity: O(n^2)
 //Space complexity of algorithm: O(n)
 public class MergeIntervals {
     // Given a list of integer pairs representing the low and high end of an
@@ -10,11 +10,6 @@ public class MergeIntervals {
      * Input: [(2, 3), (4, 8), (1, 2), (5, 7), (9, 12)]
      * Output: [(4, 8), (1, 3), (9, 12)]
      * 
-     * Input: [(5, 8), (6, 10), (2, 4), (3, 6)]
-     * Output: [(2, 10)]
-     * 
-     * Input: [(10, 12), (5, 6), (7, 9), (1, 3)]
-     * Output: [(10, 12), (5, 6), (7, 9), (1, 3)]
      */
     public static void returnMerge(ArrayList<int[]> arr) {
         Map<Integer,Integer> map = new HashMap<>();
@@ -29,7 +24,7 @@ public class MergeIntervals {
             }
             
         }
-        for (int i = 0; i < map.size(); i++) {
+        /* for (int i = 0; i < map.size(); i++) {
             if(map.get(i)==1){
 
             }
@@ -40,8 +35,7 @@ public class MergeIntervals {
             if (i==0){
                 aux[0]=map.get(i);
             }
-            else if()
-        }
+        } */
         System.out.println(map);
     }
     public static void main(String[] args) {
@@ -57,7 +51,7 @@ public class MergeIntervals {
         arr.add(d);
         arr.add(e);
         returnMerge(arr);
-        
     }
 }
+//Couldn't solve
 //40min

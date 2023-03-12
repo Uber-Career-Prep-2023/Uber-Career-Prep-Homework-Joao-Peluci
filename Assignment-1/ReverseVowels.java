@@ -1,4 +1,4 @@
-//Time complexity: O(n)
+//Time complexity: O(n^2)
 //Space complexity: O(n)
 //Technique: forward backward two pointer
 public class ReverseVowels {

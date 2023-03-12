@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 //Time complexity: O(n)
 //Space complexity of algorithm: O(n)
-//Technique: 
+//Technique: Hash the elements
 public class KAnagrams {
     // Two strings are considered to be “k-anagrams” if they can be made into
     // anagrams by changing at most k characters in one of the strings. Given two
