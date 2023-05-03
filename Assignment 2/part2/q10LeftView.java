@@ -2,7 +2,7 @@ import implementations.TreeNode;
 //18min elapsed
 //Time complexity of O(n)
 //Space complexity O(n)
-
+//Depth first generic approach
 public class q10LeftView {
     //Given a binary tree, create an array of the left view (leftmost elements in each level) of the tree.
     public static void leftView(TreeNode root) {

@@ -1,7 +1,9 @@
 import implementations.Node;
-
+//Given a singly linked list, move the nth from the last element to the front of the list.
 public class q07MoveNthLastToFront {
-    //Given a singly linked list, move the nth from the last element to the front of the list.
+    //Slow-fast pointer technique
+    //Time complexity O(n)
+    //35min
     public static Node moveElement(Node head, int k){
         Node iterate = new Node();
         Node lower, higher = iterate;

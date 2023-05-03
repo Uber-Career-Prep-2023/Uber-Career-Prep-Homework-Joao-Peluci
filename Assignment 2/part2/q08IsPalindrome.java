@@ -2,6 +2,7 @@ import implementations.Node;
 
 public class q08IsPalindrome {
     //Given a doubly linked list, determine if it is a palindrome.
+    //Doubly linked list forward-backward two-pointer
     //10min
     //Time Complexity O(2*n)
     //Space Complexity O(2*n)

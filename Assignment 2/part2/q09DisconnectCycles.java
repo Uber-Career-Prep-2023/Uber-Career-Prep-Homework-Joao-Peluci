@@ -1,5 +1,5 @@
 import implementations.Node;
-//Two pointer technique
+// Linked list fast-slow two-pointer
 //Time Complexity O(n)
 //Space Complexity O(1*2)
 //20 min
