@@ -31,8 +31,8 @@ public class BackspaceStringCompare {
         return false;
     }
     public static void main(String[] args) {
-        String input = "Uber Career Prep";
-        String compareInput = "u#Uber Careee#r Prep";
+        String input = "ab##";
+        String compareInput = "c#d#";
         System.out.println(backspaceStringCompareFunc(input,compareInput));
        
     }
