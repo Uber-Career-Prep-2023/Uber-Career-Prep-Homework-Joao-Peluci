@@ -1,5 +1,4 @@
-package part2;
-import part2.implementations.TreeNode;
+import implementations.TreeNode;
 //18min elapsed
 //Time complexity of O(n)
 //Space complexity O(n)

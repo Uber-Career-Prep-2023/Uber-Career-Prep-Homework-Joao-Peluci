@@ -1,8 +1,6 @@
-package part2;
+import implementations.Node;
 
-import part2.implementations.Node;
-
-public class q7MoveNthLastToFront {
+public class q07MoveNthLastToFront {
     //Given a singly linked list, move the nth from the last element to the front of the list.
     public static Node moveElement(Node head, int k){
         Node iterate = new Node();

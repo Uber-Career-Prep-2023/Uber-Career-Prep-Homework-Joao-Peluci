@@ -1,4 +1,4 @@
-package part2.implementations;
+package implementations;
 
 public class TreeNode {
     public int val;

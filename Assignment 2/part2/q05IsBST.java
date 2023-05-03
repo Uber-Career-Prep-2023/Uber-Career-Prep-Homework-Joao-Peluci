@@ -1,5 +1,3 @@
-package part2;
-
 //Given a binary tree, determine if it is a binary search tree.
 
 //Time Complexity: O(2^n)
@@ -7,7 +5,7 @@ package part2;
 //15min first part
 //20min second part
 
-public class q5IsBST {
+public class q05IsBST {
     public class Node {
         Node right;
         Node left;

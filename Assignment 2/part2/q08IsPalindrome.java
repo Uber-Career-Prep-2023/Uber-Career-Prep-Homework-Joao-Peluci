@@ -1,8 +1,6 @@
-package part2;
+import implementations.Node;
 
-import part2.implementations.Node;
-
-public class q8IsPalindrome {
+public class q08IsPalindrome {
     //Given a doubly linked list, determine if it is a palindrome.
     //10min
     //Time Complexity O(2*n)

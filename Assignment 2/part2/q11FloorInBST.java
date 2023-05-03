@@ -1,5 +1,4 @@
-package part2;
-import part2.implementations.TreeNode;
+import implementations.TreeNode;
 // Given a target numeric value and a binary search tree, return the floor
 // (greatest element less than or equal to the target) in the BST.
 public class q11FloorInBST {

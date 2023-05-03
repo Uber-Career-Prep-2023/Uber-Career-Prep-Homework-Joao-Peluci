@@ -1,8 +1,6 @@
-package part2;
+import implementations.TreeNode;
 
-import part2.implementations.TreeNode;
-
-public class q4CopyTree{
+public class q04CopyTree{
     //I need to create a deep copy of a Binary Tree
         //I can use iterative or recursive modes
         //If I have a tree

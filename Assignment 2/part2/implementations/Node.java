@@ -1,4 +1,4 @@
-package part2.implementations;
+package implementations;
 public class Node {
     public int data;
     public Node next;

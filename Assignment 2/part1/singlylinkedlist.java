@@ -1,4 +1,4 @@
-import part2.implementations.Node;
+import implementations.Node;
 public class singlylinkedlist {
     Node head;
     Node insertAtFront(Node head, int val) {// creates new Node with data val at front; returns new head

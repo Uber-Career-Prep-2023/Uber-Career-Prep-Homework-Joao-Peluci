@@ -1,10 +1,9 @@
-package part2;
-import part2.implementations.Node;
+import implementations.Node;
 //Two pointer technique
 //Time Complexity O(n)
 //Space Complexity O(1*2)
 //20 min
-public class q9DisconnectCycles {
+public class q09DisconnectCycles {
     public static Node disconnectCycle(Node head) {
         Node slow = head;
         Node fast = head;
