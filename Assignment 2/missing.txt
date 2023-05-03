@@ -1,6 +1,0 @@
---------------- UCP ------------------
-part 1:
-SLL - recursive inversion
-DLL - recursive inversion
-BST - all
-
