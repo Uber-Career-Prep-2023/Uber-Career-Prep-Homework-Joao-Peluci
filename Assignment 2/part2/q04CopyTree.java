@@ -19,17 +19,30 @@ public class q04CopyTree{
 
     public static TreeNode copyTree(TreeNode node) {
         //25 min
-        //Time complexity O(2^n);
-        TreeNode returnNode = new TreeNode(); //Creates new tree
-
-        if (node.right == null && node.left==null){//If the current node is a leaf
-            return node; //Returns the leaf
+        //Time complexity O(2n)=O(n);
+        if (node == null) {
+            return null;
         }
+        TreeNode returnNode = new TreeNode(node.val); //Creates new tree keeping track of val
 
         //Not a leaf
-        if (node.left!=null) returnNode.left = copyTree(node.left); //Copies a tree inside left node
-        if (node.right!=null) returnNode.right = copyTree(node.right); //Copies a tree inside right node
+        returnNode.left = copyTree(node.left); //Copies a tree inside left node
+        returnNode.right = copyTree(node.right); //Copies a tree inside right node
 
         return returnNode; //Returns the formed Tree
+    }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(2);
+        root.left = new TreeNode(3);
+        root.right = new TreeNode(4);
+        root.left.left = new TreeNode(5);
+        root.left.right = new TreeNode(7);
+    
+        TreeNode copy = copyTree(root);
+        TreeNode.printTree(root);
+        System.out.println();
+        TreeNode.printTree(copy);
+        
     }
 }

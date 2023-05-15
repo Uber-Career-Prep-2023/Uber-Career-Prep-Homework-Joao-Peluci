@@ -11,4 +11,19 @@ public class TreeNode {
         this.left = left;
         this.right = right;
     }
+
+    public static void printTree(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+        
+        // Print the current node
+        System.out.print(node.val + " ");
+        
+        // Recursively print the left and right subtrees
+        printTree(node.left);
+        printTree(node.right);
+    }
+    
+
 }
