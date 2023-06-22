@@ -9,23 +9,20 @@ public class q3PriorityQueue {
             value = v;
         };
     }
-
-
-    int capacity = 8;
     ArrayList<Entry> heap = new ArrayList<>();
 
-    public int top() { // returns the min (top) element in the heap
-        return heap.get(0).weight;
+    public String top() { // returns the min (top) element in the heap
+        return heap.get(0).value;
         
     };
 
     public void insert(Entry e) {
-        // Entry e = new Entry(x,v);
         heap.add(e);
         heapify();
     };
 
     public void remove() { // removes the min (top) element in the heap
+        System.out.println("Removing: "+heap.get(heap.size()-1).value);
         heap.remove(heap.size()-1);
         heapify();
     };
@@ -33,21 +30,15 @@ public class q3PriorityQueue {
         int child = heap.size()-1;
         int parent;
 
-        // System.out.println("Iniciando funcao heapify");
-        // System.out.println("Filho:"+heap.get(child));
-
         while (child != 0) {
             if (child % 2 != 0) {
                 parent = (child - 1) / 2;
-                // System.out.println("Filho impar, pai:"+parent);
             }
             else{
                 parent = child / 2;
-                // System.out.println("Filho par, Pai:"+parent);
             }
 
             if (heap.get(parent).weight < heap.get(child).weight) {
-                // System.out.println("Invertendo a posicao");
                 Entry tmp = heap.get(child);
                 heap.set(child, heap.get(parent));
                 heap.set(parent, tmp);
@@ -65,7 +56,7 @@ public class q3PriorityQueue {
         Entry e5 = new Entry(3, "Num 3");
         Entry e6 = new Entry(72, "Num 72");
         Entry e7 = new Entry(9, "Num 9");
-
+        
         heap.insert(e1);
         heap.insert(e2);
         heap.insert(e3);
@@ -73,20 +64,16 @@ public class q3PriorityQueue {
         heap.insert(e5);
         heap.insert(e6);
         heap.insert(e7);
-        
+
+        heap.remove();
+        heap.remove();
+        heap.remove();
+        heap.remove();
+        heap.remove();
+        heap.remove();  
 
         for (Entry e : heap.heap) {
                 System.out.println(e.value);
         }
-
-
-        // Print the top element
-        // System.out.println("Top element: " + heap.top()); // Expected output: 1
-
-        // Remove the top element
-        // heap.remove();
-
-        // Print the new top element
-        // System.out.println("New top element: " + heap.top()); // Expected output: 3
     }
 }
