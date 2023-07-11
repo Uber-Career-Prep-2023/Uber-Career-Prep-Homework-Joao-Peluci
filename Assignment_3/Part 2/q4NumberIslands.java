@@ -2,17 +2,17 @@ public class q4NumberIslands {
     // Given a binary matrix in which 1s represent land and 0s represent water.
     // Return the number of islands (contiguous 1s surrounded by 0s or the edge of
     // the matrix).
-    //Gave up
+    // Gave up
     public static int numberIslands(int[][] terrain) {
         int result = 0;
         // We can make bruteforce with two nested for loops:
-        boolean foundLand = false;
-        boolean moreWater = false;
+        // boolean foundLand = false;
+        // boolean moreWater = false;
 
         for (int i = 0; i < terrain.length; i++) {
             for (int j = 0; j < terrain[i].length; j++) {
                 if (terrain[i][j] == 1) {
-                   terrain[i][j] = 0;
+                    terrain[i][j] = 0;
                     result++;
                 }
                 System.out.print(terrain[i][j]);
@@ -35,7 +35,6 @@ public class q4NumberIslands {
                 { 1, 1, 0, 0, 0 },
                 { 0, 0, 0, 0, 0 }
         };
-        int num = numberIslands(terrain1);
 
         // Output: 1
 
@@ -59,6 +58,13 @@ public class q4NumberIslands {
         };
 
         // Output: 5
+
+        int num1 = numberIslands(terrain1);
+        int num2 = numberIslands(terrain2);
+        int num3 = numberIslands(terrain3);
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println(num3);
 
     }
 }
