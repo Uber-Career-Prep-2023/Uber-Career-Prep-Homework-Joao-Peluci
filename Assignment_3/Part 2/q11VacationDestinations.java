@@ -12,6 +12,10 @@ public class q11VacationDestinations {
     // can be reached directly from each other with corresponding travel times in
     // hours, return the number of destinations within k hours of the origin. Assume
     // that having a stopover in a city adds an hour of travel time.
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    // Technique: Hashmap, Stack
+    // Time elapsed: 60min
 
     public static int vacationDestinations(String origin, double k, Map<String, ArrayList<Path>> map) {
         Stack<Path> stack = new Stack<>();

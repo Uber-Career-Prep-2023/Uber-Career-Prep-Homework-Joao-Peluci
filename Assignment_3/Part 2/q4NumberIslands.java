@@ -2,6 +2,7 @@ public class q4NumberIslands {
     // Given a binary matrix in which 1s represent land and 0s represent water.
     // Return the number of islands (contiguous 1s surrounded by 0s or the edge of
     // the matrix).
+    //Gave up
     public static int numberIslands(int[][] terrain) {
         int result = 0;
         // We can make bruteforce with two nested for loops:
